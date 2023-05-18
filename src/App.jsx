@@ -13,7 +13,11 @@ function App() {
             <div className="body">
               <div className="name">
                 <div className="shimmer">
-                  <p>./Leo Stålenhag</p>
+                  <p>
+                    ./Leo Stålenhag
+                    <br />
+                    .NET FULLSTACK
+                  </p>
                 </div>
               </div>
               <Portfolio />

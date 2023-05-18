@@ -21,6 +21,7 @@ html {
 .body {
   font-size: x-large;
   text-align: center;
+  background-color: #faefe6c4;
 }
 
 .footer {
@@ -64,5 +65,8 @@ html {
   background-color: red;
 }
 .main-portfolio {
-  background-color: #62f500;
+  background-color: #333333c7;
+}
+.main-portfolio > .shimmer > a {
+  color: #ffffff;
 }

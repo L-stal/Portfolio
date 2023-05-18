@@ -9,6 +9,9 @@ const Contact = () => {
           >
             Linked In
           </a>
+          <a href="https://github.com/L-stal" target="_blank">
+            Github
+          </a>
           <p>Mail Me</p>
         </div>
       </div>
