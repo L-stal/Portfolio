@@ -1,0 +1,19 @@
+const Contact = () => {
+  return (
+    <>
+      <div className="main-contact">
+        <div className="shimmer">
+          <a
+            href="https://www.linkedin.com/in/leo-st%C3%A5lenhag-a58a31253/"
+            target="_blank"
+          >
+            Linked In
+          </a>
+          <p>Mail Me</p>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Contact;
