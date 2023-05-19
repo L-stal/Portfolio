@@ -25,7 +25,26 @@ function App() {
               <Contact />
             </div>
             <div className="footer">
-              <p>^MENU^</p>
+              <button className="menu" onClick={toggleDropdown}>
+                ^MENU^
+              </button>
+              <ul className="dropdown-content" id="dropdown">
+                <li>
+                  <a href="#" onClick={toggleDropdown}>
+                    PROJECTS
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={toggleDropdown}>
+                    CV
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={toggleDropdown}>
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <Routes>
@@ -37,6 +56,10 @@ function App() {
       </div>
     </>
   );
+}
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdown");
+  dropdownContent.classList.toggle("show");
 }
 
 export default App;
