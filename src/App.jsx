@@ -11,7 +11,7 @@ function App() {
         <BrowserRouter>
           <div className="main">
             <div className="body">
-              <div className="name">
+              <div className="name" id="home">
                 <div className="shimmer">
                   <p>
                     ./Leo Stålenhag
@@ -30,17 +30,30 @@ function App() {
               </button>
               <ul className="dropdown-content" id="dropdown">
                 <li>
-                  <a href="#" onClick={toggleDropdown}>
+                  <a className="home" href="#home" onClick={toggleDropdown}>
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="project"
+                    href="#portfolio"
+                    onClick={toggleDropdown}
+                  >
                     PROJECTS
                   </a>
                 </li>
                 <li>
-                  <a href="#" onClick={toggleDropdown}>
+                  <a className="cv" href="#cv" onClick={toggleDropdown}>
                     CV
                   </a>
                 </li>
                 <li>
-                  <a href="#" onClick={toggleDropdown}>
+                  <a
+                    className="contact"
+                    href="#contact"
+                    onClick={toggleDropdown}
+                  >
                     CONTACT
                   </a>
                 </li>

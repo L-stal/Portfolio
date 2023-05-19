@@ -3,6 +3,7 @@
 /* base styles */
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;

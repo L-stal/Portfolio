@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <div className="main-contact">
+      <div className="main-contact" id="contact">
         <div className="shimmer">
           <a
             href="https://www.linkedin.com/in/leo-st%C3%A5lenhag-a58a31253/"
