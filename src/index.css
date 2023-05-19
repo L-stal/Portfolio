@@ -17,6 +17,9 @@ html {
 .background {
   height: 100%;
   width: 100%;
+  right: 0;
+  background: url(./assets/nnnoise.svg);
+  animation: shimmer 5s infinite;
 }
 
 .body {
@@ -38,12 +41,12 @@ html {
 
 .shimmer {
   display: flex;
-  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300%
+  -webkit-mask: linear-gradient(-70deg, #000 30%, #0005, #000 70%) right/300%
     100%;
   background-repeat: no-repeat;
-  animation: shimmer 4s infinite;
+  animation: shimmer 3s infinite;
   text-align: center;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
@@ -53,6 +56,9 @@ html {
     -webkit-mask-position: left;
   }
 }
+.shimmer > a {
+  padding: 3rem;
+}
 .main-portfolio,
 .main-cv,
 .name,
@@ -60,15 +66,18 @@ html {
   height: 100vh;
 }
 .main-contact {
-  background-color: #ffffff;
+  background-color: #333333c7;
 }
 .main-cv {
-  background-color: red;
+  background-color: #faefe6c4;
 }
 .main-portfolio {
   background-color: #333333c7;
 }
 .main-portfolio > .shimmer > a {
+  color: #ffffff;
+}
+.main-contact > .shimmer > a {
   color: #ffffff;
 }
 

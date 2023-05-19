@@ -12,7 +12,7 @@ const Contact = () => {
           <a href="https://github.com/L-stal" target="_blank">
             Github
           </a>
-          <p>Mail Me</p>
+          <a>Mail Me</a>
         </div>
       </div>
     </>

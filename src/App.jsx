@@ -16,7 +16,7 @@ function App() {
                   <p>
                     ./Leo Stålenhag
                     <br />
-                    .NET FULLSTACK
+                    .NET FULL STACK
                   </p>
                 </div>
               </div>
