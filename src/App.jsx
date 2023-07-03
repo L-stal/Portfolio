@@ -12,6 +12,14 @@ function App() {
           <div className="main">
             <div className="body">
               <div className="name" id="home">
+                <div className="status">
+                  <p>
+                    STATUS:
+                    <br />
+                    Looking for
+                    <br /> an internship.{" "}
+                  </p>
+                </div>
                 <div className="shimmer">
                   <p>
                     ./Leo Stålenhag

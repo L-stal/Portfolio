@@ -44,7 +44,7 @@ html {
   -webkit-mask: linear-gradient(-70deg, #000 30%, #0005, #000 70%) right/300%
     100%;
   background-repeat: no-repeat;
-  animation: shimmer 3s infinite;
+  animation: shimmer 5s infinite;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -68,6 +68,7 @@ html {
 .main-contact {
   background-color: #333333c7;
 }
+.main,
 .main-cv {
   background-color: #faefe6c4;
 }
@@ -84,6 +85,14 @@ html {
 .dropdown {
   position: relative;
   display: inline-block;
+}
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
 }
 
 .dropdown-content {
@@ -110,6 +119,7 @@ html {
   display: block;
 }
 .menu {
+  mix-blend-mode: difference;
   background-color: transparent;
   color: inherit;
   padding: 30px;
@@ -117,4 +127,13 @@ html {
   border: none;
   cursor: pointer;
   outline: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu.black {
+  color: black;
+}
+
+.menu.white {
+  color: white;
 }

@@ -3,6 +3,11 @@ const Portfolio = () => {
     <>
       <div className="main-portfolio" id="portfolio">
         <div className="shimmer">
+          <a>
+            Currently working on:
+            <br />
+            Untitled Unity Project
+          </a>
           <a href="https://github.com/L-stal/MovieReact" target="_blank">
             React Film Client
           </a>
