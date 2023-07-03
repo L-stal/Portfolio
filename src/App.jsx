@@ -34,7 +34,7 @@ function App() {
             </div>
             <div className="footer">
               <button className="menu" onClick={toggleDropdown}>
-                ^MENU^
+                MENU
               </button>
               <ul className="dropdown-content" id="dropdown">
                 <li>
