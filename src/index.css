@@ -38,8 +38,16 @@ html {
   text-align: center;
   width: 100vw;
 }
-
 .shimmer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+/*Laggy on phones*/
+/* .shimmer {
   display: flex;
   -webkit-mask: linear-gradient(-70deg, #000 30%, #0005, #000 70%) right/300%
     100%;
@@ -55,7 +63,7 @@ html {
   100% {
     -webkit-mask-position: left;
   }
-}
+} */
 .shimmer > a {
   padding: 3rem;
 }
