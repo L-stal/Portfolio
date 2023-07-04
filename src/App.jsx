@@ -69,7 +69,7 @@ function App() {
             </div>
           </div>
           <Routes>
-            <Route path="/Portfolio" element={<Portfolio />} />
+            <Route path="/" element={<Portfolio />} />
             <Route path="/CV" element={<CV />} />
             <Route path="/Contact" element={<Contact />} />
           </Routes>
