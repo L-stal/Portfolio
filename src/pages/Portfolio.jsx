@@ -9,10 +9,10 @@ const Portfolio = () => {
             Untitled Unity Project
           </a>
           <a href="https://github.com/L-stal/MovieReact" target="_blank">
-            React Film Client
+            &gt; React Film Client
           </a>
           <a href="https://github.com/L-stal/MovieAPI" target="_blank">
-            Movie Api Database
+            &gt; Movie Api Database
           </a>
         </div>
       </div>

@@ -66,6 +66,10 @@ html {
 } */
 .shimmer > a {
   padding: 3rem;
+  text-decoration: none;
+}
+.shimmer > h4 {
+  font-size: 4rem;
 }
 .main-portfolio,
 .main-cv,

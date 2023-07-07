@@ -6,7 +6,7 @@ const CV = () => {
       <div className="main-cv" id="cv">
         <div className="shimmer">
           <a href={pdf} download="Leo_Stalenhag.pdf">
-            Download CV
+            &gt; Download CV
           </a>
         </div>
       </div>
