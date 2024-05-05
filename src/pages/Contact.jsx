@@ -4,7 +4,7 @@ const Contact = () => {
       <div className="main-contact" id="contact">
         <div className="shimmer">
           <a
-            href="https://www.linkedin.com/in/leo-st%C3%A5lenhag-a58a31253/"
+            href="https://www.linkedin.com/in/leo-s-a58a31253/"
             target="_blank"
           >
             &gt; Linked In
