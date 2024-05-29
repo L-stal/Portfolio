@@ -16,22 +16,21 @@ function App() {
                   <p>
                     STATUS:
                     <br />
-                    Intership / Exam 
-                    <br /> @Semurai{" "}
+                    Open to work
+                    <br /> Hobby Projects
                   </p>
                 </div>
                 <div className="shimmer">
                   <p>
                     ./Leo Stålenhag
                     <br />
-                                      .NET FULLSTACK
-                                  </p>
-                                  <br />
-                                  ASP.NET | EF | SQL | C# | React | JS/TS 
-                                  <br />
+                    .NET FULLSTACK
+                  </p>
+                  <br />
+                  ASP.NET | EF | SQL | C# | React | JS/TS
+                  <br />
                   and more.
                 </div>
-
               </div>
               <Portfolio />
               <CV />

@@ -6,13 +6,19 @@ const Portfolio = () => {
           <a>
             Currently working on:
             <br />
-            Exam-project at Semurai
+            Unreal hobby project
+          </a>
+          <a
+            href="https://github.com/lordstimpa/SPA-Game-Project"
+            target="_blank"
+          >
+            &gt; SPA Game
+          </a>
+          <a href="https://github.com/L-stal/DynamicBonesFix" target="_blank">
+            &gt; Unity Script Fix for Dynamic Bones
           </a>
           <a href="https://github.com/L-stal/MovieReact" target="_blank">
             &gt; React Film Client
-          </a>
-          <a href="https://github.com/L-stal/MovieAPI" target="_blank">
-            &gt; Movie Database Api
           </a>
         </div>
       </div>
