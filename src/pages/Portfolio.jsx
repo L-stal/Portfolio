@@ -1,3 +1,4 @@
+import OTSPdf from "/src/OptTheShop.pdf";
 const Portfolio = () => {
   return (
     <>
@@ -8,6 +9,11 @@ const Portfolio = () => {
             <br />
             Hobby Projects / AoC
           </a>
+          <a href={OTSPdf} target="_blank" rel="noopener noreferrer">
+            &gt; OptTheShop <br />
+            Graduation Project
+            <br /> /READ/
+          </a>
           <a
             href="https://github.com/lordstimpa/SPA-Game-Project"
             target="_blank"
@@ -16,9 +22,6 @@ const Portfolio = () => {
           </a>
           <a href="https://github.com/L-stal/DynamicBonesFix" target="_blank">
             &gt; Unity Script Fix for Dynamic Bones
-          </a>
-          <a href="https://github.com/L-stal/MovieReact" target="_blank">
-            &gt; React Film Client
           </a>
         </div>
       </div>

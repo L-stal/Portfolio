@@ -3,6 +3,8 @@ import CV from "./pages/CV.jsx";
 import Contact from "./pages/Contact.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import ScrollIndicator from "./components/ScrollIndicator";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +13,7 @@ function App() {
     <>
       <div className="background">
         <BrowserRouter>
+          <ScrollIndicator />
           <div className="main">
             <div className="body">
               <div className="name" id="home">

@@ -1,0 +1,30 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.black {
+  background-color: black;
+  color: white;
+}
+
+.navbar.white {
+  background-color: white;
+  color: black;
+}
+
+.navbar a {
+  color: inherit; /* Ensures links inherit the current color */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
