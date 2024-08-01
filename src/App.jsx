@@ -1,35 +1,92 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import CV from "./pages/CV.jsx";
+import Contact from "./pages/Contact.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="background">
+        <BrowserRouter>
+          <div className="main">
+            <div className="body">
+              <div className="name" id="home">
+                <div className="status">
+                  <p>
+                    STATUS:
+                    <br />
+                    Open to work
+                    <br /> Hobby Projects
+                  </p>
+                </div>
+                <div className="shimmer">
+                  <p>
+                    Leo Stålenhag
+                    <br />
+                    .NET FULLSTACK
+                  </p>
+                  <br />
+                  ASP.NET | EF | SQL | C# | React | JS/TS
+                  <br />
+                  and more.
+                </div>
+              </div>
+              <Portfolio />
+              <CV />
+              <Contact />
+            </div>
+            <div className="footer">
+              <button className="menu" onClick={toggleDropdown}>
+                MENU
+              </button>
+              <ul className="dropdown-content" id="dropdown">
+                <li>
+                  <a className="home" href="#home" onClick={toggleDropdown}>
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="project"
+                    href="#portfolio"
+                    onClick={toggleDropdown}
+                  >
+                    PROJECTS
+                  </a>
+                </li>
+                <li>
+                  <a className="cv" href="#cv" onClick={toggleDropdown}>
+                    CV
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="contact"
+                    href="#contact"
+                    onClick={toggleDropdown}
+                  >
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <Routes>
+            <Route path="/" element={<Portfolio />} />
+            <Route path="/CV" element={<CV />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
+}
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdown");
+  dropdownContent.classList.toggle("show");
 }
 
-export default App
+export default App;
