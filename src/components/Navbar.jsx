@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css"; // Ensure you import your CSS file
 
 const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const menu = document.querySelector(".navbar");
-      const scrollPosition = window.scrollY + 300;
+      const scrollPosition = window.scrollY + 10;
       const pageHeight = window.innerHeight;
       const currentPage = Math.floor(scrollPosition / pageHeight);
 
@@ -27,9 +27,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/pages/CV">CV</Link>
-      <Link to="/">PORTFOLIO</Link>
-      <Link to="/Contact">CONTACT</Link>
+      <a href="#home">./Home/</a>
+      <a href="#portfolio">./PORTFOLIO/</a>
+      <a href="#cv">./CV/</a>
+      <a href="#contact">./CONTACT/</a>
     </nav>
   );
 };

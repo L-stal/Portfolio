@@ -26,6 +26,11 @@ html {
   text-align: center;
   background-color: #faefe6c4;
 }
+@media (max-width: 768px) {
+  .body {
+    font-size: large;
+  }
+}
 
 .footer {
   /*ADD ARROW TO SHOW FUNCTION*/
@@ -36,6 +41,7 @@ html {
   bottom: 0;
   text-align: center;
   width: 100vw;
+  z-index: 1001;
 }
 .shimmer {
   display: flex;
@@ -66,6 +72,11 @@ html {
 .shimmer > a {
   padding: 3rem;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .shimmer > a {
+    padding: 2rem;
+  }
 }
 .shimmer > h4 {
   font-size: 4rem;
@@ -101,8 +112,8 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 10px;
-  padding-left: 15px;
+  padding-top: 100px;
+  padding-left: 50px;
   text-align: left;
 }
 
@@ -147,4 +158,22 @@ html {
 
 .menu.white {
   color: white;
+}
+
+.footer {
+  display: none; /* Hide footer by default */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: block; /* Show footer in mobile view */
+  }
+  .status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 25px;
+    padding-left: 25px;
+    text-align: left;
+  }
 }

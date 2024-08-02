@@ -3,6 +3,7 @@ import "../styles/ScrollIndicator.css";
 
 const ScrollIndicator = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop;
@@ -13,10 +14,16 @@ const ScrollIndicator = () => {
     setScrollPosition(scrollPercent);
   };
 
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -24,7 +31,11 @@ const ScrollIndicator = () => {
     <div className="scroll-indicator-container">
       <div
         className="scroll-indicator"
-        style={{ height: `${scrollPosition}%` }}
+        style={
+          isMobile
+            ? { height: `${scrollPosition}%` }
+            : { width: `${scrollPosition}%` }
+        }
       ></div>
     </div>
   );
