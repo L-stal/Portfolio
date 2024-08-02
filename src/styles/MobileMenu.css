@@ -1,3 +1,4 @@
+/* MobileMenu.css */
 .footer {
   display: none; /* Hide footer by default */
 }
@@ -8,21 +9,24 @@
   }
 }
 
-q.dropdown-content {
-  display: none;
-  flex-direction: column;
-}
-
-.dropdown-content.show {
-  display: flex;
-}
-
-.dropdown-content a {
-  padding: 1rem;
-  text-decoration: none;
+.menu {
+  mix-blend-mode: difference;
+  background-color: transparent;
   color: inherit;
+  padding: 30px;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.menu.black {
+  background-color: none;
+  color: black;
+}
+
+.menu.white {
+  background-color: none;
+  color: white;
 }

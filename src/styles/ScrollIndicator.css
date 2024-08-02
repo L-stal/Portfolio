@@ -1,6 +1,6 @@
 .scroll-indicator-container {
   position: fixed;
-  top: 65px;
+  top: 70px;
   width: 100%;
   height: 10px;
   background: rgba(0, 0, 0, 0.1);

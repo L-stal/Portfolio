@@ -9,6 +9,8 @@
   transition: background-color 0.2s ease, color 0.2s ease;
   background-color: rgb(54, 48, 48);
   color: white;
+  height: 80px;
+  z-index: 1;
 }
 
 .navbar.black {

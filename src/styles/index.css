@@ -149,7 +149,7 @@ html {
   border: none;
   cursor: pointer;
   outline: inherit;
-  transition: color 0.3s ease-in-out;
+  color: #35a0e7;
 }
 
 .menu.black {
