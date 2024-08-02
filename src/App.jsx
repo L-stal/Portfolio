@@ -10,7 +10,7 @@ import MoblieMenu from "./components/MobileMenu.jsx";
 
 function App() {
   return (
-    <div class="body">
+    <div className="body">
       <div className="background">
         <BrowserRouter>
           <Navbar />
