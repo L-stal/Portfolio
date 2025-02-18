@@ -1,4 +1,4 @@
-import cvPdf from "/src/LeoStalenhag.pdf";
+import cvPdf from "/public/LeoStalenhag.pdf";
 
 const CV = () => {
   return (
