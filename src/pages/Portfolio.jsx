@@ -7,11 +7,10 @@ const Portfolio = () => {
           <a>
             Currently working on:
             <br />
-            Hobby Projects / AoC
+            Hobby Projects / Internship
           </a>
           <a href={OTSPdf} target="_blank" rel="noopener noreferrer">
-            &gt; OptTheShop <br />
-            Graduation Project
+            &gt; OptTheShop
             <br /> /READ/
           </a>
           <a

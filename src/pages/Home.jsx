@@ -7,7 +7,7 @@ const Home = () => {
             STATUS:
             <br />
             Open to work
-            <br /> Hobby Projects
+            <br /> Intern @ Funrity
           </p>
         </div>
         <div className="shimmer">
